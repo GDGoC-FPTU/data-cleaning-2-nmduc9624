@@ -67,6 +67,8 @@ def clean_data(input_file, output_file):
     print(f"Successfully sanitized data. Output saved to {output_file}")
     print(f"Original records: {len(data)}")
     print(f"Sanitized records: {len(sanitized_data)}")
+    print("Sanitized data:")
+    print(json.dumps(sanitized_data, indent=4))
 
 
 if __name__ == "__main__":
